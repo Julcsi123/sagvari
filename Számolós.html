@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8">
+    <script src="https://cdn.jsdelivr.net/npm/brython@3.10.5/brython.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/brython@3.10.5/brython_stdlib.js"></script>
+    <style>
+        * {
+            background-color: rgb(41, 45, 51);
+            color: rgb(196, 211, 225);
+            text-align: center;
+        }
+    </style>
+    <script type="text/python">
+from browser import document as D, html as H
+a = int(input("Írj be egy számot 1 és 10 között! :"))
+D <= H.H1(a)
+if a == 1:
+    D <= H.H1("megérett a meggy")
+elif a == 2:
+    D <= H.H1("csipkebokor-vessző")
+elif a == 3:
+    D <= H.H1("te leszel a párom")
+elif a == 4:
+    D <= H.H1("Bíz' oda nem mégy!")
+elif a== 5:
+    D <= H.H1("Leszállott a köd")
+elif a== 6:
+    D <= H.H1("hasad a pad")
+elif a== 7:
+    D <= H.H1("Dörög az ég")
+elif a== 8:
+    D <= H.H1("Üres a polc")
+elif a== 9:
+    D <= H.H1("Kis Ferenc")
+elif a== 10:
+    D <= H.H1("Tiszta víz")
+else:
+    D <= H.H1("Nincs ilyen szám")  
+    </script>
+</head>
+<body onload="brython()"></body>
