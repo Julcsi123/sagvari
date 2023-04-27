@@ -1,0 +1,48 @@
+<body>
+    <img id="o1" src="Hegedű.jpg"></img>
+</body>
+<style>
+    body {
+        height: 100px;
+        background-color: bisque;
+    }
+    #o1 {
+        display: inline-block;
+        cursor: pointer;
+        background-color: aquamarine;
+        box-shadow: 1px 1px 3px black;
+        transition: 2s;
+        animation-name: a1;
+        position: absolute;
+        left: 50%;
+        top: 2%;
+        animation: a1 7s infinite;
+    }
+    @keyframes a1 {
+        0% {
+            left: 50%;
+            top: 2%;
+        }
+        20% {
+            left: 90%;
+            top: 70%;
+            background-color: rgb(12, 53, 59);
+        }
+        40% {
+            left: 10%;
+            top: 70%;
+        }
+        60% {
+            left: 90%;
+            top: 10%;
+        }
+        80% {
+            left: 10%;
+            top: 10%;
+        }
+        100% {
+            left: 50%;
+            top: 2%;
+        }
+    }
+</style>
